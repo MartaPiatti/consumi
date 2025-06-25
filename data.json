@@ -1,0 +1,169 @@
+{
+  "chart": {
+    "title": "Energy consumption by source",
+    "subtitle": "Measured in terms of [primary energy](#dod:primaryenergy) using the [substitution method](#dod:substitutionmethod).",
+    "note": "\"Other renewables\" include geothermal, biomass, and waste energy.",
+    "citation": "Energy Institute - Statistical Review of World Energy (2024)",
+    "originalChartUrl": "https://ourworldindata.org/grapher/energy-consumption-by-source-and-country?stackMode=absolute&country=~CHE&v=1&csvType=filtered&useColumnShortNames=false",
+    "selection": [
+      "World"
+    ]
+  },
+  "columns": {
+    "Other renewables (including geothermal and biomass) - TWh": {
+      "titleShort": "Other renewables (including geothermal and biomass)",
+      "titleLong": "Other renewables (including geothermal and biomass)",
+      "descriptionShort": "Input-equivalent energy, in terawatt-hours, is based on gross generation and does not account for cross-border electricity supply.",
+      "shortUnit": "TWh",
+      "unit": "terawatt-hours",
+      "timespan": "1965-2023",
+      "type": "Numeric",
+      "owidVariableId": 943935,
+      "shortName": "other_renewables_consumption_equivalent_twh",
+      "lastUpdated": "2024-06-20",
+      "nextUpdate": "2025-06-20",
+      "citationShort": "Energy Institute - Statistical Review of World Energy (2024) – with major processing by Our World in Data",
+      "citationLong": "Energy Institute - Statistical Review of World Energy (2024) – with major processing by Our World in Data. “Other renewables (including geothermal and biomass)” [dataset]. Energy Institute, “Statistical Review of World Energy” [original data].",
+      "fullMetadata": "https://api.ourworldindata.org/v1/indicators/943935.metadata.json"
+    },
+    "Biofuels consumption - TWh": {
+      "titleShort": "Biofuels consumption",
+      "titleLong": "Biofuels consumption",
+      "descriptionShort": "Includes biogasoline (such as ethanol) and biodiesel. Volumes have been adjusted for energy content.",
+      "shortUnit": "TWh",
+      "unit": "terawatt-hours",
+      "timespan": "1965-2023",
+      "type": "Numeric",
+      "owidVariableId": 943812,
+      "shortName": "biofuels_consumption_twh",
+      "lastUpdated": "2024-06-20",
+      "nextUpdate": "2025-06-20",
+      "citationShort": "Energy Institute - Statistical Review of World Energy (2024) – with major processing by Our World in Data",
+      "citationLong": "Energy Institute - Statistical Review of World Energy (2024) – with major processing by Our World in Data. “Biofuels consumption” [dataset]. Energy Institute, “Statistical Review of World Energy” [original data].",
+      "fullMetadata": "https://api.ourworldindata.org/v1/indicators/943812.metadata.json"
+    },
+    "Solar consumption - TWh": {
+      "titleShort": "Solar consumption",
+      "titleLong": "Solar consumption",
+      "descriptionShort": "Input-equivalent energy, in terawatt-hours, is based on gross generation and does not account for cross-border electricity supply.",
+      "shortUnit": "TWh",
+      "unit": "terawatt-hours",
+      "timespan": "1965-2023",
+      "type": "Numeric",
+      "owidVariableId": 943950,
+      "shortName": "solar_consumption_equivalent_twh",
+      "lastUpdated": "2024-06-20",
+      "nextUpdate": "2025-06-20",
+      "citationShort": "Energy Institute - Statistical Review of World Energy (2024) – with major processing by Our World in Data",
+      "citationLong": "Energy Institute - Statistical Review of World Energy (2024) – with major processing by Our World in Data. “Solar consumption” [dataset]. Energy Institute, “Statistical Review of World Energy” [original data].",
+      "fullMetadata": "https://api.ourworldindata.org/v1/indicators/943950.metadata.json"
+    },
+    "Wind consumption - TWh": {
+      "titleShort": "Wind consumption",
+      "titleLong": "Wind consumption",
+      "descriptionShort": "Input-equivalent energy, in terawatt-hours, is based on gross generation and does not account for cross-border electricity supply.",
+      "shortUnit": "TWh",
+      "unit": "terawatt-hours",
+      "timespan": "1965-2023",
+      "type": "Numeric",
+      "owidVariableId": 943961,
+      "shortName": "wind_consumption_equivalent_twh",
+      "lastUpdated": "2024-06-20",
+      "nextUpdate": "2025-06-20",
+      "citationShort": "Energy Institute - Statistical Review of World Energy (2024) – with major processing by Our World in Data",
+      "citationLong": "Energy Institute - Statistical Review of World Energy (2024) – with major processing by Our World in Data. “Wind consumption” [dataset]. Energy Institute, “Statistical Review of World Energy” [original data].",
+      "fullMetadata": "https://api.ourworldindata.org/v1/indicators/943961.metadata.json"
+    },
+    "Hydro consumption - TWh": {
+      "titleShort": "Hydropower consumption",
+      "titleLong": "Hydropower consumption",
+      "descriptionShort": "Input-equivalent energy is based on gross generation and does not account for cross-border electricity supply.",
+      "shortUnit": "TWh",
+      "unit": "terawatt-hours",
+      "timespan": "1965-2023",
+      "type": "Numeric",
+      "owidVariableId": 943872,
+      "shortName": "hydro_consumption_equivalent_twh",
+      "lastUpdated": "2024-06-20",
+      "nextUpdate": "2025-06-20",
+      "citationShort": "Energy Institute - Statistical Review of World Energy (2024) – with major processing by Our World in Data",
+      "citationLong": "Energy Institute - Statistical Review of World Energy (2024) – with major processing by Our World in Data. “Hydropower consumption” [dataset]. Energy Institute, “Statistical Review of World Energy” [original data].",
+      "fullMetadata": "https://api.ourworldindata.org/v1/indicators/943872.metadata.json"
+    },
+    "Nuclear consumption - TWh": {
+      "titleShort": "Nuclear consumption",
+      "titleLong": "Nuclear consumption",
+      "descriptionShort": "Input-equivalent energy is based on gross generation and does not account for cross-border electricity supply.",
+      "shortUnit": "TWh",
+      "unit": "terawatt-hours",
+      "timespan": "1965-2023",
+      "type": "Numeric",
+      "owidVariableId": 943903,
+      "shortName": "nuclear_consumption_equivalent_twh",
+      "lastUpdated": "2024-06-20",
+      "nextUpdate": "2025-06-20",
+      "citationShort": "Energy Institute - Statistical Review of World Energy (2024) – with major processing by Our World in Data",
+      "citationLong": "Energy Institute - Statistical Review of World Energy (2024) – with major processing by Our World in Data. “Nuclear consumption” [dataset]. Energy Institute, “Statistical Review of World Energy” [original data].",
+      "fullMetadata": "https://api.ourworldindata.org/v1/indicators/943903.metadata.json"
+    },
+    "Gas consumption - TWh": {
+      "titleShort": "Gas consumption",
+      "titleLong": "Gas consumption",
+      "descriptionKey": [
+        "Excludes natural gas converted to liquid fuels but includes derivatives of coal as well as natural gas consumed in Gas-to-Liquids transformation. The difference between the world consumption figures and the world production statistics is due to variations in stocks at storage facilities and liquefaction plants, together with unavoidable disparities in the definition, measurement or conversion of gas supply and demand data."
+      ],
+      "shortUnit": "TWh",
+      "unit": "terawatt-hours",
+      "timespan": "1965-2023",
+      "type": "Numeric",
+      "owidVariableId": 943841,
+      "shortName": "gas_consumption_twh",
+      "lastUpdated": "2024-06-20",
+      "nextUpdate": "2025-06-20",
+      "citationShort": "Energy Institute - Statistical Review of World Energy (2024) – with major processing by Our World in Data",
+      "citationLong": "Energy Institute - Statistical Review of World Energy (2024) – with major processing by Our World in Data. “Gas consumption” [dataset]. Energy Institute, “Statistical Review of World Energy” [original data].",
+      "fullMetadata": "https://api.ourworldindata.org/v1/indicators/943841.metadata.json"
+    },
+    "Coal consumption - TWh": {
+      "titleShort": "Coal consumption",
+      "titleLong": "Coal consumption",
+      "descriptionKey": [
+        "Includes commercial solid fuels only, i.e. bituminous coal and anthracite (hard coal), and lignite and brown (sub-bituminous) coal, and other commercial solid fuels. Excludes coal converted to liquid or gaseous fuels, but includes coal consumed in transformation processes. Differences between the consumption figures and the world production statistics are accounted for by stock changes, and unavoidable disparities in the definition, measurement or conversion of coal supply and demand data."
+      ],
+      "shortUnit": "TWh",
+      "unit": "terawatt-hours",
+      "timespan": "1965-2023",
+      "type": "Numeric",
+      "owidVariableId": 943815,
+      "shortName": "coal_consumption_twh",
+      "lastUpdated": "2024-06-20",
+      "nextUpdate": "2025-06-20",
+      "citationShort": "Energy Institute - Statistical Review of World Energy (2024) – with major processing by Our World in Data",
+      "citationLong": "Energy Institute - Statistical Review of World Energy (2024) – with major processing by Our World in Data. “Coal consumption” [dataset]. Energy Institute, “Statistical Review of World Energy” [original data].",
+      "fullMetadata": "https://api.ourworldindata.org/v1/indicators/943815.metadata.json"
+    },
+    "Oil consumption - TWh": {
+      "titleShort": "Oil consumption",
+      "titleLong": "Oil consumption",
+      "descriptionKey": [
+        "Includes inland demand plus international aviation and marine bunkers and refinery fuel and loss. Consumption of biogasoline (such as ethanol) and biodiesel are excluded while derivatives of coal and natural gas are included. Differences between the world consumption figures and world production statistics are accounted for by stock changes, consumption of non-petroleum additives and substitute fuels and unavoidable disparities in the definition, measurement or conversion of oil supply and demand data."
+      ],
+      "shortUnit": "TWh",
+      "unit": "terawatt-hours",
+      "timespan": "1965-2023",
+      "type": "Numeric",
+      "owidVariableId": 943913,
+      "shortName": "oil_consumption_twh",
+      "lastUpdated": "2024-06-20",
+      "nextUpdate": "2025-06-20",
+      "citationShort": "Energy Institute - Statistical Review of World Energy (2024) – with major processing by Our World in Data",
+      "citationLong": "Energy Institute - Statistical Review of World Energy (2024) – with major processing by Our World in Data. “Oil consumption” [dataset]. Energy Institute, “Statistical Review of World Energy” [original data].",
+      "fullMetadata": "https://api.ourworldindata.org/v1/indicators/943913.metadata.json"
+    }
+  },
+  "dateDownloaded": "2025-06-11",
+  "activeFilters": {
+    "country": "~CHE",
+    "stackMode": "absolute"
+  }
+}

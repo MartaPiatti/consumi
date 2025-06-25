@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="it">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Consumo Energetico in Svizzera</title>
+    <link rel="stylesheet" href="style.css" />
+    <script src="https://d3js.org/d3.v7.min.js"></script>
+  </head>
+  <body>
+    <div id="container">
+      <!-- <div id="title">
+        <h1>CONSUMO ENERGETICO IN SVIZZERA NEGLI ANNI</h1>
+      </div> -->
+      <div id="donut-chart"></div>
+      <div id="year-slider-container">
+        <input type="range" id="year-slider" min="1965" max="2023" value="1980" step="1" />
+        <span id="year-label">1980</span>
+      </div>
+      <div id="energy-icons"></div>
+    </div>
+    <script src="main.js"></script>
+  </body>
+</html>
