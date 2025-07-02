@@ -57,8 +57,8 @@ function getYearData(year) {
 // Funzione per disegnare il donut chart per un anno specifico
 function drawChart(year) {
   const { total, values } = getYearData(year);
-  const width = 420;
-  const height = 420;
+  const width = 450;
+  const height = 450;
   const innerRadius = 90;
   const minOuter = 135;
   const maxOuter = 190;
@@ -68,15 +68,15 @@ function drawChart(year) {
   // Filtra solo le energie > 1%
   const filteredValues = values.filter((d) => d.percent >= 1);
   const colorMap = {
-    "Solar consumption - TWh": "#FFD23F",
-    "Hydro consumption - TWh": "#AEE6F5",
-    "Wind consumption - TWh": "#B6C6F5",
-    "Other renewables (including geothermal and biomass) - TWh": "#E2B6F5",
-    "Nuclear consumption - TWh": "#C6E25B",
-    "Biofuels consumption - TWh": "#4B8F7B",
-    "Gas consumption - TWh": "#F5B6D6",
-    "Oil consumption - TWh": "#F5A25B",
-    "Coal consumption - TWh": "#8A5A13",
+    "Solar consumption - TWh": "#FFD12E",
+    "Hydro consumption - TWh": "#95D9E5",
+    "Wind consumption - TWh": "#ACB5F8",
+    "Other renewables (including geothermal and biomass) - TWh": "#E5B2FF",
+    "Nuclear consumption - TWh": "#B9DA49",
+    "Biofuels consumption - TWh": "#006146",
+    "Gas consumption - TWh": "#FFB3D2",
+    "Oil consumption - TWh": "#FF9233",
+    "Coal consumption - TWh": "#804600",
   };
 
   d3.select("#donut-chart").selectAll("*").remove();
@@ -104,7 +104,7 @@ function drawChart(year) {
     .attr("fill", (d) => colorMap[d.data.key] || "#ccc")
     .attr("class", (d) => `donut-slice slice-key-${CSS.escape(d.data.key)}`)
     .attr("data-key", (d) => d.data.key)
-    .style("filter", "drop-shadow(-3px 3px 0px #1D1D1B)")
+    .attr("filter", "url(#svg-shadow)")
     .style("transition", "opacity 0.3s");
 
   // Eventi hover sugli spicchi
@@ -122,11 +122,21 @@ function drawChart(year) {
     .attr("dy", "-0.2em")
     .attr("font-size", "2.7em")
     .attr("font-weight", "bold")
-    .attr("font-family", '"Satoshi", "Montserrat", Arial, sans-serif')
+    .attr("font-family", "Satoshi")
     .attr("fill", "#2d1a00")
     .attr("dominant-baseline", "middle")
+    .attr("class", "donut-kw-value")
     .text(`${Math.round(total)}M`);
-  g.append("text").attr("text-anchor", "middle").attr("dy", "1.5em").attr("font-size", "2em").attr("font-family", '"Satoshi", "Montserrat", Arial, sans-serif').attr("fill", "#1D1D1B").attr("dominant-baseline", "middle").text("kw");
+  g.append("text")
+    .attr("text-anchor", "middle")
+    .attr("dy", "1.5em")
+    .attr("font-size", "2em")
+    .attr("font-family", "Satoshi")
+    .attr("font-weight", 500)
+    .attr("fill", "#2d1a00")
+    .attr("dominant-baseline", "middle")
+    .attr("class", "donut-kw-label")
+    .text("kw");
 }
 
 // Funzione per aggiornare le icone e percentuali
@@ -155,7 +165,7 @@ function updateEnergyIcons(year) {
     iconDiv.style.transition = "all 0.2s ease-in-out";
 
     const percentDiv = document.createElement("div");
-    percentDiv.className = "energy-percentage";
+    percentDiv.className = "energy-percentage cubano-font";
     const percentValue = document.createElement("span");
     percentValue.textContent = Math.round(source.percent);
     const percentSymbol = document.createElement("span");

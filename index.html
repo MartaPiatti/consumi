@@ -6,8 +6,16 @@
     <title>Consumo Energetico in Svizzera</title>
     <link rel="stylesheet" href="style.css" />
     <script src="https://d3js.org/d3.v7.min.js"></script>
+    <!-- Google Fonts: Montserrat e Satoshi (fallback) -->
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap" rel="stylesheet" />
   </head>
   <body>
+    <!-- Filtro SVG per ombra compatibile Safari -->
+    <svg width="0" height="0" style="position: absolute">
+      <filter id="svg-shadow" x="-20%" y="-20%" width="140%" height="140%">
+        <feDropShadow dx="-3" dy="3" stdDeviation="0" flood-color="rgba(0,0,0,1)" />
+      </filter>
+    </svg>
     <div id="container">
       <!-- <div id="title">
         <h1>CONSUMO ENERGETICO IN SVIZZERA NEGLI ANNI</h1>
