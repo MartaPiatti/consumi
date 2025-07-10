@@ -136,7 +136,7 @@ function drawChart(year) {
     .attr("fill", "#2d1a00")
     .attr("dominant-baseline", "middle")
     .attr("class", "donut-kw-label")
-    .text("kW");
+    .text("TWh");
 }
 
 // Funzione per aggiornare le icone e percentuali
