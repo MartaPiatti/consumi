@@ -126,7 +126,7 @@ function drawChart(year) {
     .attr("fill", "#2d1a00")
     .attr("dominant-baseline", "middle")
     .attr("class", "donut-kw-value")
-    .text(`${Math.round(total)}M`);
+    .text(`${Math.round(total)}`);
   g.append("text")
     .attr("text-anchor", "middle")
     .attr("dy", "1.5em")
